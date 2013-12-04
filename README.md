@@ -19,5 +19,5 @@ After selecting the JPEG ELA plugin from _Filters_ on a saved JPEG image it is p
 
 ### Requirements
 
-# GIMP 2.8+
-# Python
+* GIMP 2.8+
+* Python
