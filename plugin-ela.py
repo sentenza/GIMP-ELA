@@ -196,7 +196,7 @@ register(
     "*",      # Alternately use RGB, RGB*, GRAY*, INDEXED etc.
     [
         (PF_IMAGE,    "img",      "Input image",      None),
-        (PF_SLIDER, "quality",  "_Quality", 0.7, (0, 1, 0.1)),
+        (PF_SLIDER, "quality",  "_Quality", 0.7, (0, 1, 0.01)),
         (PF_BOOL, "report", "Create HTML report", True),
         (PF_STRING, "reportName", "R_eport name", "Report_JPEG_ELA.html")
 
