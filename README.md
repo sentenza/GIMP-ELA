@@ -1,9 +1,9 @@
 JPEG Error Level Analysis for the GIMP
 ======================================
 
-The JPEG-compression is a lossy technique. The use this compression on digital images introduces an error on each block of 8x8 pixels that composes the resulting imag. However, when an image is modified, the 8x8 cells containing the modifications have no longer the same error level of the rest of the unmodified image.
+The JPEG-compression is a lossy technique. Using this kind of compression on digital images introduces an error on each block of 8x8 pixels that composes the resulting picture. Nevertheless, when an image is modified, the 8x8 cells containing the modifications have no longer the same error level of the rest of the unmodified image.
 
-The Error Level Analysis (ELA) aims to discover areas within a JPEG image that are at different compression levels, so that a possible manipulation of the highlighted portions could be clued. In order to succeed in this operation the original image is intentionally resaved at a known error rate (such as 70%) and then the difference between the resulted image and the original one is computed. If an area of the image has been compressed multiple times one could suppose that the image has possibly been manipulated.
+The [Error Level Analysis][ELA] (ELA) aims to discover areas within a JPEG image that are at different compression levels, so that a possible manipulation of the highlighted portions could be clued. In order to succeed in this operation the original image is intentionally saved again at a known error rate - such as 70% - and then the difference between the resulted image and the original one is computed. If an area of the image has been compressed multiple times one could suppose that the image has possibly been manipulated.
 
 
 Installation
@@ -19,5 +19,7 @@ After selecting the JPEG ELA plugin from _Filters_ on a saved JPEG image it is p
 
 ### Requirements
 
-* GIMP 2.8+
+* [GIMP](https://www.gimp.org/) 2.8+
 * Python
+
+[ELA]: http://www.errorlevelanalysis.com/
